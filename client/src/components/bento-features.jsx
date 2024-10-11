@@ -19,8 +19,8 @@ const features = [
   },
   {
     Icon: InputIcon,
-    name: "Search for any Quotes",
-    description: "Search through all your fav books in one place.",
+    name: "Supercharge Your Job Search",
+    description: "Search through all platforms in one place.",
     href: "/login",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
@@ -28,8 +28,8 @@ const features = [
   },
   {
     Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
+    name: "International Jobs",
+    description: "Keep an eye on available foreign opppurtunites.",
     href: "/login",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
@@ -37,8 +37,8 @@ const features = [
   },
   {
     Icon: BookmarkIcon,
-    name: "Diverse source library",
-    description: "Millions of Words, Infinite Wisdom.",
+    name: "Save your intrested jobs.",
+    description: "No time, no problem save for later.",
     href: "/login",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
@@ -47,7 +47,7 @@ const features = [
   {
     Icon: BellIcon,
     name: "Notifications",
-    description: "Get notified everyday with 10 new quotes in your inbox.",
+    description: "Get notified everyday with 10 new posts in your inbox.",
     href: "/login",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
