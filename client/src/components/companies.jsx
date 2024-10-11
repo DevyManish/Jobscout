@@ -45,11 +45,11 @@ export const Companies = () => {
   return (
     <div className="w-full px-40 py-20 lg:py-40">
       <div className="container mx-auto">
-        <div className="grid grid-cols-5 gap-10 items-center">
-          <h3 className="text-sm tracking-tighter font-semibold text-gray-500 lg:max-w-xl text-left">
+        <div className="flex flex-col gap-10 items-center">
+          <h3 className="text-sm tracking-tighter font-semibold text-gray-500 text-center">
             TRUSTED BY MARKET LEADERS
           </h3>
-          <div className="relative w-full col-span-4">
+          <div className="relative w-full py-2">
             <div className="bg-gradient-to-r from-background via-white/0 to-background z-10 absolute left-0 top-0 right-0 bottom-0 w-full h-full"></div>
             <Carousel setApi={setApi} className="w-full">
               <CarouselContent>
@@ -59,8 +59,8 @@ export const Companies = () => {
                       src={`https://cdn.magicui.design/companies/${logo}.svg`}
                       className="h-10 w-40 px-2 dark:brightness-0 dark:invert"
                       alt={logo}
-                      width={40}
-                      height={40}
+                      width={80}
+                      height={80}
                     />
                   </CarouselItem>
                 ))}

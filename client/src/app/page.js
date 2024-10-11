@@ -11,7 +11,7 @@ import { Companies } from "@/components/companies";
 export default function Home() {
   return (
     <>
-      <section className="space-y-6 pb-8 pt-6 md:px-64 md:pb-12 md:pt-10 lg:py-20">
+      <section className="space-y-6 pb-8 pt-16 px-8 md:px-64 md:pb-12 md:pt-10 lg:py-20">
         <div className="container py-3 mt-8 flex w-full flex-col items-center gap-4 text-center sm:mb-10 lg:mb-20 md:sm-20">
           <ShineBorder
             className="text-center rounded-3xl capitalize bg-muted px-4 py-1.5 text-lg font-medium absolute"
@@ -65,13 +65,13 @@ export default function Home() {
 
           <BorderBeam size={250} /> */}
           <ShineBorder
-            className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-xl border bg-background md:shadow-xl"
+            className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-xl border bg-background md:shadow-xl space-y-4 md:space-y-2"
             color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
           >
-            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-4xl md:text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
             Supercharge Your Job Search
             </span>
-            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">AI-powered resume optimization and job discovery at your fingertips.</span>
+            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-lg md:text-xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">AI-powered resume optimization and job discovery at your fingertips.</span>
           </ShineBorder>
         </div>
       </section>
