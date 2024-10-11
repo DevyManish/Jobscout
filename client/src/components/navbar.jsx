@@ -20,11 +20,14 @@ const Navbar = () => {
       <nav className="container flex justify-between items-center mx-auto px-6 h-16 ">
         <div className="flex items-center mb-1 py-2 space-x-2">
         <Link href="/">
-          <Image src="/logo.png" alt="Logo" width={150} height={95} />
+          <div className="flex">
+          <Image src="/logo.png" alt="Logo" className="dark:hidden" width={40} height={60} />
+          <Image src="/blogo.png" alt="Logo" className="hidden dark:block" width={40} height={60} />
+          <p className="font-saman mt-1 text-3xl font-extrabold">
+            <Link href="/">obscout<span className="text-3xl font-semibold ml-1">/</span></Link>
+          </p>
+          </div>
           </Link>
-          {/* <p className="font-saman mt-1 text-3xl font-extrabold">
-            <Link href="/">Jobscout</Link>
-          </p> */}
         <Badge className="hidden mt-2 lg:block md:block">Beta</Badge>
 
         </div>
