@@ -1,5 +1,6 @@
 {
-  "name": "client",
+  "name": "jobscout-client",
+  "author": "Manish",
   "version": "0.1.0",
   "private": true,
   "scripts": {
