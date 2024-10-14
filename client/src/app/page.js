@@ -1,4 +1,4 @@
-import { BorderBeam } from "@/components/ui/border-beam";
+// import { BorderBeam } from "@/components/ui/border-beam";
 import ShineBorder from "@/components/ui/shine-border";
 import Image from "next/image";
 import Link from "next/link";

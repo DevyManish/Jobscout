@@ -54,7 +54,7 @@ const Navbar = () => {
 
             <div className="flex items-center gap-6">
               <div className="flex">
-                <Link href="/sign-in">
+                <Link href="/login">
                   <Button className="flex font-medium text-base rounded-full mt-2  px-5 py-2.5 mb-2">
                     {/* <User size={20} /> */}
                     <div className=" mt-0">Login</div>
@@ -91,7 +91,7 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex items-center space-x-2">
           <div>
-            <Link href="/sign-in">
+            <Link href="/login">
               <Button className="flex font-medium text-base rounded-full mt-2  px-5 py-2.5 mb-2">
                 {/* <User size={20} /> */}
                 <div className=" mt-0">Login</div>
