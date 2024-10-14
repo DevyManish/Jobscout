@@ -1,9 +1,10 @@
 import Link from "next/link"
-
+import Image from "next/image";
 import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import { Button, buttonVariants } from "@/components/ui/button";import { Icons } from "@/components/icons"
 import { UserAuthForm } from "@/components/user-auth-form"
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 export const metadata = {
   title: "Create an account",
@@ -17,32 +18,60 @@ export default function RegisterPage() {
       <div className="lg:p-8">
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
           <div className="flex flex-col space-y-2 text-center">
-            <Icons.logo className="mx-auto h-6 w-6" />
+            <Image src="/logo.png" alt="Logo" className="dark:hidden mx-auto h-6 w-6" width={40} height={60} />
+            <Image src="/blogo.png" alt="Logo" className="hidden dark:block mx-auto h-6 w-6" width={40} height={60} />
             <h1 className="text-2xl font-semibold tracking-tight">
               Create an account
             </h1>
-            {/* <p className="text-sm text-muted-foreground">
-              Enter your email below to create your account
-            </p> */}
+            <form>
+                <div className="flex flex-col items-center">
+                  <div className="flex flex-col w-full py-2 text-left space-y-4">
+                    <Label
+                      htmlFor="name"
+                      className="text-sm text-muted-foreground"
+                    >
+                      Enter your name
+                    </Label>
+                    <Input
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Hari Das"
+                    />
+                  </div>
+                  <div className="flex flex-col w-full text-left space-y-4">
+                    <Label
+                      htmlFor="password"
+                      className="text-sm text-muted-foreground"
+                    >
+                      Enter your password
+                    </Label>
+                    <Input id="password" type="password" name="password" />
+                  </div>
+                  <div className="flex flex-col py-2 w-full text-left space-y-4">
+                    <Label
+                      htmlFor="cpassword"
+                      className="text-sm text-muted-foreground"
+                    >
+                      Confirm your password
+                    </Label>
+                    <Input id="cpassword" type="password" name="confirm_password" />
+                  </div>
+                  <div className="py-3 mt-3 w-full">
+                    <Button className="w-full">Submit</Button>
+                  </div>
+                </div>
+              </form>
           </div>
           <UserAuthForm />
           <p className="px-8 text-center text-sm text-muted-foreground">
-            By clicking continue, you agree to our{" "}
-            <Link
-              href="/terms"
-              className="hover:text-brand underline underline-offset-4"
-            >
-              Terms of Service
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="/privacy"
-              className="hover:text-brand underline underline-offset-4"
-            >
-              Privacy Policy
-            </Link>
-            .
-          </p>
+              <Link
+                href="/login"
+                className="hover:text-brand underline underline-offset-4"
+              >
+                Already have an account? Sign in
+              </Link>
+            </p>
         </div>
       </div>
     </div>
