@@ -31,7 +31,7 @@ export default function LoginPage() {
                       id="email"
                       type="email"
                       name="email"
-                      placeholder="manish@jobscout.com"
+                      placeholder="hari@dev.com"
                     />
                   </div>
                   <div className="flex flex-col w-full text-left space-y-4">
