@@ -210,8 +210,8 @@ export default function Features() {
                   <h3 className="text-lg font-semibold mb-2">
                     Analysis Result:
                   </h3>
-                  <p>Match Percentage: {analyzeResult.match_percentage}</p>
-                  <p>Suggestions: {analyzeResult.suggestions}</p>
+                  {/* <p>Match Percentage: {analyzeResult.match_percentage}</p> */}
+                  <p>Suggestions: {analyzeResult.analysis}</p>
                 </div>
               )}
             </Card>
