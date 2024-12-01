@@ -68,7 +68,7 @@ export default function Features() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch("https://jobscout-backend.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
@@ -96,7 +96,7 @@ export default function Features() {
     setIsLoading((prev) => ({ ...prev, rephrase: true }));
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/rephrase", {
+      const response = await fetch("https://jobscout-backend.onrender.com/rephrase", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -210,7 +210,7 @@ export default function Features() {
                   <h3 className="text-lg font-semibold mb-2">
                     Analysis Result:
                   </h3>
-                  <p>Match Percentage: {analyzeResult.match_percentage}%</p>
+                  <p>Match Percentage: {analyzeResult.match_percentage}</p>
                   <p>Suggestions: {analyzeResult.suggestions}</p>
                 </div>
               )}
